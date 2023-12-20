@@ -1,0 +1,790 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body,
+input,
+textarea,
+button {
+  font-size: 1.6rem;
+
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  height: 100%;
+
+  display: flex;
+
+  background-color: #f1f4fa;
+  color: #06152b;
+}
+
+aside {
+  min-width: 21.8rem;
+
+  padding: 3.2rem 2.8rem 3.2rem 2.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+
+  background-color: #ffffff;
+}
+
+aside div {
+  display: none;
+  justify-content: end;
+}
+
+aside div .close-sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+
+  outline: 0;
+  border: 0;
+}
+
+aside div .close-sidebar i {
+  color: #06152b;
+
+  font-size: 2.4rem;
+}
+
+aside .logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+aside .logo-container img {
+  width: 4.2rem;
+  height: 2.6rem;
+}
+
+aside .logo-container h2 {
+  color: #06152b;
+
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+aside ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside ul li a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  color: #06152b;
+
+  opacity: 0.5;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+aside ul .active a {
+  color: #3a36db;
+
+  opacity: 1;
+}
+
+aside ul li a i {
+  color: #030229;
+
+  opacity: 0.4;
+
+  font-size: 2.4rem;
+}
+
+aside ul .active a i {
+  color: #3a36db;
+
+  opacity: 1;
+}
+
+aside ul li .qtd-message {
+  color: #ff69b4;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+aside .footer-sidebar {
+  padding-top: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+aside .footer-sidebar button {
+  padding: 1.2rem 2rem;
+
+  background-color: #ff69b4;
+  color: #ffffff;
+
+  outline: 0;
+  border: 0;
+  border-radius: 1rem;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+aside .footer-sidebar .logout-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside .footer-sidebar .logout-container .user {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+aside .footer-sidebar .logout-container .user img {
+  width: 4.4rem;
+  height: 4.4rem;
+
+  border-radius: 1.2rem;
+}
+
+aside .footer-sidebar .logout-container .user .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+aside .footer-sidebar .logout-container .user .info .name {
+  color: #06152b;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+aside .footer-sidebar .logout-container .user .info .plan-info {
+  color: #06152b;
+
+  opacity: 0.5;
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+aside .footer-sidebar .logout-container button {
+  padding: 0;
+
+  background-color: transparent;
+
+  outline: 0;
+  border: 0;
+}
+
+aside .footer-sidebar .logout-container button i {
+  color: #06152b;
+
+  opacity: 0.4;
+
+  font-size: 2rem;
+}
+
+main {
+  width: 100%;
+
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main header div {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+main header div .open-sidebar {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+
+  outline: 0;
+  border: 0;
+}
+
+main header div .open-sidebar i {
+  color: #06152b;
+
+  font-size: 2.4rem;
+}
+
+main header div h2 {
+  color: #06152b;
+
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+main header .dates {
+  display: flex;
+  gap: 1.4rem;
+}
+
+main header .dates input {
+  padding: 1rem 1.6rem;
+
+  background-color: #ffffff;
+  color: #06152b;
+
+  opacity: 0.7;
+
+  outline: 0;
+  border: 0;
+  border-radius: 0.6rem;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main .stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+main .stats .card-stat {
+  padding: 2.8rem;
+
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+
+  background-color: #ffffff;
+
+  border-radius: 1rem;
+}
+
+main .stats .card-stat .icon {
+  width: 6rem;
+  height: 6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 3.8rem;
+}
+
+main .stats .card-stat .icon.purple {
+  background-color: rgba(58, 54, 219, 0.1);
+}
+
+main .stats .card-stat .icon.green {
+  background-color: rgba(3, 168, 158, 0.2);
+}
+
+main .stats .card-stat .icon.pink {
+  background-color: rgba(255, 105, 180, 0.1);
+}
+
+main .stats .card-stat .icon i {
+  font-size: 2.4rem;
+}
+
+main .stats .card-stat .icon.purple i {
+  color: #3a36db;
+}
+
+main .stats .card-stat .icon.green i {
+  color: #03a89e;
+}
+
+main .stats .card-stat .icon.pink i {
+  color: #ff69b4;
+}
+
+main .stats .card-stat .stat {
+  display: flex;
+  flex-direction: column;
+}
+
+main .stats .card-stat .stat h3 {
+  color: #06152b;
+
+  opacity: 0.7;
+
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+main .stats .card-stat .stat span {
+  color: #06152b;
+
+  opacity: 0.7;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main .graphic-container {
+  display: grid;
+  grid-template-columns: 1fr 46rem;
+  gap: 2.8rem;
+}
+
+main .graphic-container .graphic-visitors {
+  height: 40.8rem;
+
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+
+  background-color: #ffffff;
+
+  border-radius: 1rem;
+}
+
+main .graphic-container .graphic-visitors header h5 {
+  color: #06152b;
+
+  opacity: 0.7;
+
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+main .graphic-container .graphic-order-status {
+  height: 40.8rem;
+
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+
+  background-color: #ffffff;
+
+  border-radius: 1rem;
+}
+
+main .graphic-container .graphic-order-status header h5 {
+  color: #06152b;
+
+  opacity: 0.7;
+
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+main .statistic-dashboard {
+  display: grid;
+  grid-template-columns: 1fr 46rem;
+  gap: 2.8rem;
+}
+
+main .statistic-dashboard .recent-services {
+  height: 33.5rem;
+
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+
+  background-color: #ffffff;
+
+  border-radius: 1rem;
+}
+
+main .statistic-dashboard .recent-services header h5 {
+  color: #06152b;
+
+  opacity: 0.7;
+
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+main .statistic-dashboard .recent-services table thead tr th {
+  padding: 1rem 0;
+
+  color: #06152b;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: start;
+}
+
+main .statistic-dashboard .recent-services table thead tr th:nth-child(3) {
+  text-align: right;
+}
+
+main .statistic-dashboard .recent-services table thead tr th:nth-child(4) {
+  text-align: center;
+}
+
+main .statistic-dashboard .recent-services table thead tr th:nth-child(5) {
+  text-align: right;
+}
+
+main .statistic-dashboard .recent-services table tbody tr td {
+  padding: 1rem 0;
+}
+
+main .statistic-dashboard .recent-services table tbody tr td .order {
+  color: #06152b;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main .statistic-dashboard .recent-services table tbody tr td .service-name {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+main .statistic-dashboard .recent-services table tbody tr td .service-name img {
+  width: 3rem;
+  height: 3rem;
+
+  border-radius: 0.5rem;
+}
+
+main
+  .statistic-dashboard
+  .recent-services
+  table
+  tbody
+  tr
+  td
+  .service-name
+  .name {
+  color: #06152b;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main .statistic-dashboard .recent-services table tbody tr td:nth-child(3) {
+  text-align: right;
+}
+
+main .statistic-dashboard .recent-services table tbody tr td .price {
+  color: #06152b;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: right;
+}
+
+main .statistic-dashboard .recent-services table tbody tr td:nth-child(4) {
+  text-align: center;
+}
+
+main .statistic-dashboard .recent-services table tbody tr td .total-order {
+  padding: 1rem 2rem;
+
+  background-color: rgba(58, 54, 219, 0.2);
+  color: #3a36db;
+
+  border-radius: 0.8rem;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+main .statistic-dashboard .recent-services table tbody tr td:nth-child(5) {
+  text-align: right;
+}
+
+main .statistic-dashboard .recent-services table tbody tr td .total-amount {
+  color: #06152b;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: right;
+}
+
+main .statistic-dashboard .top-selling-services {
+  height: 33.5rem;
+
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+
+  background-color: #ffffff;
+
+  border-radius: 1rem;
+}
+
+main .statistic-dashboard .top-selling-services header h5 {
+  color: #06152b;
+
+  opacity: 0.7;
+
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+main
+  .statistic-dashboard
+  .top-selling-services
+  .top-selling-services-container {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+main
+  .statistic-dashboard
+  .top-selling-services
+  .top-selling-services-container
+  img {
+  width: 9.2rem;
+  height: 9.6rem;
+
+  border-radius: 1rem;
+}
+
+main
+  .statistic-dashboard
+  .top-selling-services
+  .top-selling-services-container
+  .info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main
+  .statistic-dashboard
+  .top-selling-services
+  .top-selling-services-container
+  .info
+  .name {
+  color: #06152b;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+main
+  .statistic-dashboard
+  .top-selling-services
+  .top-selling-services-container
+  .info
+  .ratings {
+  display: flex;
+  gap: 0.4rem;
+}
+
+main
+  .statistic-dashboard
+  .top-selling-services
+  .top-selling-services-container
+  .info
+  .ratings
+  i {
+  color: #ff69b4;
+
+  opacity: 0.4;
+}
+
+main
+  .statistic-dashboard
+  .top-selling-services
+  .top-selling-services-container
+  .info
+  .ratings
+  .active {
+  opacity: 1;
+}
+
+main
+  .statistic-dashboard
+  .top-selling-services
+  .top-selling-services-container
+  .info
+  .value {
+  color: #06152b;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media screen and (max-width: 1280px) {
+  main .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main .graphic-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main .statistic-dashboard {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  aside {
+    height: 100vh;
+
+    margin-left: -100vw;
+
+    display: none;
+
+    position: fixed;
+
+    animation-duration: 500ms;
+  }
+
+  aside div {
+    display: flex;
+  }
+
+  main header div .open-sidebar {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .graphic-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main header {
+    flex-direction: column;
+    align-items: start;
+    gap: 1.6rem;
+  }
+
+  main header div {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+  main header .dates,
+  main header .dates input {
+    width: 100%;
+  }
+
+  main .stats {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@keyframes showSidebar {
+  from {
+    margin-left: -100vw;
+  }
+  to {
+    margin-left: -0vw;
+  }
+}

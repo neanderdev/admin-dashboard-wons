@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./board-list.css" />
+
+    <title>Wons | Task Preview</title>
+  </head>
+
+  <body>
+    <aside>
+      <div>
+        <button type="button" class="close-sidebar">
+          <i class="ph-fill ph-x-circle"></i>
+        </button>
+      </div>
+
+      <div class="logo-container">
+        <img src="./assets/logo.svg" alt="Logo" />
+
+        <h2>Wons</h2>
+      </div>
+
+      <ul>
+        <li>
+          <a href="">
+            <i class="ph-fill ph-squares-four"></i>
+
+            Dashboard
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="ph-fill ph-chart-scatter"></i>
+
+            Analytics
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="ph-fill ph-ticket"></i>
+
+            Invoice
+          </a>
+        </li>
+
+        <li class="active">
+          <a href="">
+            <i class="ph-fill ph-file-text"></i>
+
+            Schedule
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="ph-fill ph-calendar-blank"></i>
+
+            Calendar
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="ph-fill ph-pulse"></i>
+
+            Messages
+          </a>
+
+          <span class="qtd-message">49</span>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="ph-fill ph-bell-simple"></i>
+
+            Notification
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="ph-fill ph-gear"></i>
+
+            Settings
+          </a>
+        </li>
+      </ul>
+
+      <div class="footer-sidebar">
+        <button type="button">Upgrade Now</button>
+
+        <div class="logout-container">
+          <div class="user">
+            <img
+              src="https://www.github.com/neanderdev.png"
+              alt="Avatar do Usuário"
+            />
+
+            <div class="info">
+              <span class="name">Easin Arafat</span>
+
+              <span class="plan-info">Free Account</span>
+            </div>
+          </div>
+
+          <button type="button">
+            <i class="ph-fill ph-sign-out"></i>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <header>
+        <div>
+          <button type="button" class="open-sidebar">
+            <i class="ph-fill ph-list"></i>
+          </button>
+
+          <h2>Task Preview</h2>
+        </div>
+
+        <button type="button">
+          Filter
+
+          <i class="ph-fill ph-sliders-horizontal"></i>
+        </button>
+      </header>
+
+      <div class="menu-search">
+        <div class="buttons-group">
+          <button type="button">List</button>
+
+          <button type="button" class="active">Board</button>
+
+          <button type="button">Timeline</button>
+        </div>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" id="search" placeholder="Search" />
+
+          <i class="ph ph-magnifying-glass"></i>
+        </div>
+      </div>
+
+      <div class="to-do-list">
+        <div class="list-boards to-do">
+          <h3>To Do</h3>
+
+          <div class="cards-board">
+            <div class="board">
+              <header>
+                <div class="radio-button">
+                  <input
+                    type="checkbox"
+                    id="dashboard-design"
+                    name="dashboard-design"
+                    value="dashboard-design"
+                  />
+
+                  <label for="dashboard-design">Dashboard Design</label>
+                </div>
+
+                <button type="button" class="more-action-board">
+                  <i class="ph-fill ph-dots-three-outline"></i>
+                </button>
+              </header>
+
+              <div class="badges">
+                <span class="badge low">Low</span>
+
+                <span class="badge on-track">On Track</span>
+              </div>
+
+              <p>Discussion for management dashboard ui design</p>
+
+              <footer>
+                <div class="collaborators">
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <button type="button" class="add-collaborator">
+                    <i class="ph ph-plus"></i>
+                  </button>
+                </div>
+
+                <div class="buttons-icons">
+                  <button type="button" class="comment">
+                    <i class="ph-fill ph-chat-circle-dots"></i>
+
+                    112
+                  </button>
+
+                  <button type="button" class="favorite">
+                    <i class="ph-fill ph-heart"></i>
+
+                    1.2k
+                  </button>
+                </div>
+              </footer>
+            </div>
+
+            <div class="board">
+              <header>
+                <div class="radio-button">
+                  <input
+                    type="checkbox"
+                    id="landing-page-design"
+                    name="landing-page-design"
+                    value="landing-page-design"
+                  />
+
+                  <label for="landing-page-design">Landing Page Design</label>
+                </div>
+
+                <button type="button" class="more-action-board">
+                  <i class="ph-fill ph-dots-three-outline"></i>
+                </button>
+              </header>
+
+              <div class="badges">
+                <span class="badge medium">Medium</span>
+
+                <span class="badge at-risk">At Risk</span>
+              </div>
+
+              <p>Discussion for management dashboard ui design</p>
+
+              <footer>
+                <div class="collaborators">
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <button type="button" class="add-collaborator">
+                    <i class="ph ph-plus"></i>
+                  </button>
+                </div>
+
+                <div class="buttons-icons">
+                  <button type="button" class="comment">
+                    <i class="ph-fill ph-chat-circle-dots"></i>
+
+                    112
+                  </button>
+
+                  <button type="button" class="favorite">
+                    <i class="ph-fill ph-heart"></i>
+
+                    1.2k
+                  </button>
+                </div>
+              </footer>
+            </div>
+
+            <div class="board">
+              <header>
+                <div class="radio-button">
+                  <input
+                    type="checkbox"
+                    id="e-shop-mobile-app"
+                    name="e-shop-mobile-app"
+                    value="e-shop-mobile-app"
+                  />
+
+                  <label for="e-shop-mobile-app">E-Shop Mobile App</label>
+                </div>
+
+                <button type="button" class="more-action-board">
+                  <i class="ph-fill ph-dots-three-outline"></i>
+                </button>
+              </header>
+
+              <div class="badges">
+                <span class="badge high">High</span>
+              </div>
+
+              <p>Discussion for management dashboard ui design</p>
+
+              <footer>
+                <div class="collaborators">
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <button type="button" class="add-collaborator">
+                    <i class="ph ph-plus"></i>
+                  </button>
+                </div>
+
+                <div class="buttons-icons">
+                  <button type="button" class="comment">
+                    <i class="ph-fill ph-chat-circle-dots"></i>
+
+                    112
+                  </button>
+
+                  <button type="button" class="favorite">
+                    <i class="ph-fill ph-heart"></i>
+
+                    1.2k
+                  </button>
+                </div>
+              </footer>
+            </div>
+
+            <div class="board">
+              <header>
+                <div class="radio-button">
+                  <input
+                    type="checkbox"
+                    id="dashboard-design"
+                    name="dashboard-design"
+                    value="dashboard-design"
+                  />
+
+                  <label for="dashboard-design">Dashboard Design</label>
+                </div>
+
+                <button type="button" class="more-action-board">
+                  <i class="ph-fill ph-dots-three-outline"></i>
+                </button>
+              </header>
+
+              <div class="badges">
+                <span class="badge low">Low</span>
+
+                <span class="badge on-track">On Track</span>
+              </div>
+
+              <p>Discussion for management dashboard ui design</p>
+
+              <footer>
+                <div class="collaborators">
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <button type="button" class="add-collaborator">
+                    <i class="ph ph-plus"></i>
+                  </button>
+                </div>
+
+                <div class="buttons-icons">
+                  <button type="button" class="comment">
+                    <i class="ph-fill ph-chat-circle-dots"></i>
+
+                    112
+                  </button>
+
+                  <button type="button" class="favorite">
+                    <i class="ph-fill ph-heart"></i>
+
+                    1.2k
+                  </button>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-boards in-progress">
+          <h3>In Progress</h3>
+
+          <div class="cards-board">
+            <div class="board">
+              <header>
+                <div class="radio-button">
+                  <input
+                    type="checkbox"
+                    id="dashboard-design"
+                    name="dashboard-design"
+                    value="dashboard-design"
+                    checked
+                  />
+
+                  <label for="dashboard-design">Dashboard Design</label>
+                </div>
+
+                <button type="button" class="more-action-board">
+                  <i class="ph-fill ph-dots-three-outline"></i>
+                </button>
+              </header>
+
+              <div class="badges">
+                <span class="badge low">Low</span>
+
+                <span class="badge on-track">On Track</span>
+              </div>
+
+              <p>Discussion for management dashboard ui design</p>
+
+              <footer>
+                <div class="collaborators">
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <button type="button" class="add-collaborator">
+                    <i class="ph ph-plus"></i>
+                  </button>
+                </div>
+
+                <div class="buttons-icons">
+                  <button type="button" class="comment">
+                    <i class="ph-fill ph-chat-circle-dots"></i>
+
+                    112
+                  </button>
+
+                  <button type="button" class="favorite">
+                    <i class="ph-fill ph-heart"></i>
+
+                    1.2k
+                  </button>
+                </div>
+              </footer>
+            </div>
+
+            <div class="board">
+              <header>
+                <div class="radio-button">
+                  <input
+                    type="checkbox"
+                    id="landing-page-design"
+                    name="landing-page-design"
+                    value="landing-page-design"
+                    checked
+                  />
+
+                  <label for="landing-page-design">Landing Page Design</label>
+                </div>
+
+                <button type="button" class="more-action-board">
+                  <i class="ph-fill ph-dots-three-outline"></i>
+                </button>
+              </header>
+
+              <div class="badges">
+                <span class="badge medium">Medium</span>
+
+                <span class="badge at-risk">At Risk</span>
+              </div>
+
+              <p>Discussion for management dashboard ui design</p>
+
+              <div class="images">
+                <img
+                  src="https://cdn.dribbble.com/userupload/10799697/file/original-70a5f184184531b5c913d354b4bf3955.png?resize=400x300&vertical=center"
+                  alt=""
+                />
+
+                <img
+                  src="https://cdn.dribbble.com/userupload/11284152/file/original-3a78a46b657b27aabe9bad346208e44f.png?resize=400x300&vertical=center"
+                  alt=""
+                />
+              </div>
+
+              <footer>
+                <div class="collaborators">
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <button type="button" class="add-collaborator">
+                    <i class="ph ph-plus"></i>
+                  </button>
+                </div>
+
+                <div class="buttons-icons">
+                  <button type="button" class="comment">
+                    <i class="ph-fill ph-chat-circle-dots"></i>
+
+                    112
+                  </button>
+
+                  <button type="button" class="favorite">
+                    <i class="ph-fill ph-heart"></i>
+
+                    1.2k
+                  </button>
+                </div>
+              </footer>
+            </div>
+
+            <div class="board">
+              <header>
+                <div class="radio-button">
+                  <input
+                    type="checkbox"
+                    id="e-shop-mobile-app"
+                    name="e-shop-mobile-app"
+                    value="e-shop-mobile-app"
+                  />
+
+                  <label for="e-shop-mobile-app">E-Shop Mobile App</label>
+                </div>
+
+                <button type="button" class="more-action-board">
+                  <i class="ph-fill ph-dots-three-outline"></i>
+                </button>
+              </header>
+
+              <div class="badges">
+                <span class="badge high">High</span>
+              </div>
+
+              <p>Discussion for management dashboard ui design</p>
+
+              <footer>
+                <div class="collaborators">
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <button type="button" class="add-collaborator">
+                    <i class="ph ph-plus"></i>
+                  </button>
+                </div>
+
+                <div class="buttons-icons">
+                  <button type="button" class="comment">
+                    <i class="ph-fill ph-chat-circle-dots"></i>
+
+                    112
+                  </button>
+
+                  <button type="button" class="favorite">
+                    <i class="ph-fill ph-heart"></i>
+
+                    1.2k
+                  </button>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-boards in-review">
+          <h3>In Review</h3>
+
+          <div class="cards-board">
+            <div class="board">
+              <header>
+                <div class="radio-button">
+                  <input
+                    type="checkbox"
+                    id="dashboard-design"
+                    name="dashboard-design"
+                    value="dashboard-design"
+                    checked
+                  />
+
+                  <label for="dashboard-design">Dashboard Design</label>
+                </div>
+
+                <button type="button" class="more-action-board">
+                  <i class="ph-fill ph-dots-three-outline"></i>
+                </button>
+              </header>
+
+              <div class="badges">
+                <span class="badge low">Low</span>
+
+                <span class="badge on-track">On Track</span>
+              </div>
+
+              <p>Discussion for management dashboard ui design</p>
+
+              <div class="images">
+                <img
+                  src="https://cdn.dribbble.com/userupload/9020385/file/original-e98780a5ba41f2f6f3166f8bbc549b9a.png?resize=640x480&vertical=center"
+                  alt=""
+                />
+              </div>
+
+              <footer>
+                <div class="collaborators">
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <button type="button" class="add-collaborator">
+                    <i class="ph ph-plus"></i>
+                  </button>
+                </div>
+
+                <div class="buttons-icons">
+                  <button type="button" class="comment">
+                    <i class="ph-fill ph-chat-circle-dots"></i>
+
+                    112
+                  </button>
+
+                  <button type="button" class="favorite">
+                    <i class="ph-fill ph-heart"></i>
+
+                    1.2k
+                  </button>
+                </div>
+              </footer>
+            </div>
+
+            <div class="board">
+              <header>
+                <div class="radio-button">
+                  <input
+                    type="checkbox"
+                    id="e-shop-mobile-app"
+                    name="e-shop-mobile-app"
+                    value="e-shop-mobile-app"
+                    checked
+                  />
+
+                  <label for="e-shop-mobile-app">E-Shop Mobile App</label>
+                </div>
+
+                <button type="button" class="more-action-board">
+                  <i class="ph-fill ph-dots-three-outline"></i>
+                </button>
+              </header>
+
+              <div class="badges">
+                <span class="badge high">High</span>
+              </div>
+
+              <p>Discussion for management dashboard ui design</p>
+
+              <div class="images">
+                <img
+                  src="https://cdn.dribbble.com/userupload/10799697/file/original-70a5f184184531b5c913d354b4bf3955.png?resize=400x300&vertical=center"
+                  alt=""
+                />
+
+                <img
+                  src="https://cdn.dribbble.com/userupload/11284152/file/original-3a78a46b657b27aabe9bad346208e44f.png?resize=400x300&vertical=center"
+                  alt=""
+                />
+
+                <img
+                  src="https://cdn.dribbble.com/userupload/10799697/file/original-70a5f184184531b5c913d354b4bf3955.png?resize=400x300&vertical=center"
+                  alt=""
+                />
+
+                <img
+                  src="https://cdn.dribbble.com/userupload/11284152/file/original-3a78a46b657b27aabe9bad346208e44f.png?resize=400x300&vertical=center"
+                  alt=""
+                />
+              </div>
+
+              <footer>
+                <div class="collaborators">
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <button type="button" class="add-collaborator">
+                    <i class="ph ph-plus"></i>
+                  </button>
+                </div>
+
+                <div class="buttons-icons">
+                  <button type="button" class="comment">
+                    <i class="ph-fill ph-chat-circle-dots"></i>
+
+                    112
+                  </button>
+
+                  <button type="button" class="favorite">
+                    <i class="ph-fill ph-heart"></i>
+
+                    1.2k
+                  </button>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-boards done">
+          <h3>Done</h3>
+
+          <div class="cards-board">
+            <div class="board">
+              <header>
+                <div class="radio-button">
+                  <input
+                    type="checkbox"
+                    id="dashboard-design"
+                    name="dashboard-design"
+                    value="dashboard-design"
+                    checked
+                  />
+
+                  <label for="dashboard-design">Dashboard Design</label>
+                </div>
+
+                <button type="button" class="more-action-board">
+                  <i class="ph-fill ph-dots-three-outline"></i>
+                </button>
+              </header>
+
+              <div class="badges">
+                <span class="badge low">Low</span>
+
+                <span class="badge on-track">On Track</span>
+              </div>
+
+              <p>Discussion for management dashboard ui design</p>
+
+              <div class="images">
+                <img
+                  src="https://cdn.dribbble.com/userupload/9020385/file/original-e98780a5ba41f2f6f3166f8bbc549b9a.png?resize=640x480&vertical=center"
+                  alt=""
+                />
+              </div>
+
+              <footer>
+                <div class="collaborators">
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <img
+                    src="https://github.com/neanderdev.png"
+                    alt="Imagem do Colaborador"
+                  />
+
+                  <button type="button" class="add-collaborator">
+                    <i class="ph ph-plus"></i>
+                  </button>
+                </div>
+
+                <div class="buttons-icons">
+                  <button type="button" class="comment">
+                    <i class="ph-fill ph-chat-circle-dots"></i>
+
+                    112
+                  </button>
+
+                  <button type="button" class="favorite">
+                    <i class="ph-fill ph-heart"></i>
+
+                    1.2k
+                  </button>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="./board-list.js"></script>
+</html>

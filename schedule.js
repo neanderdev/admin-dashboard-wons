@@ -1,0 +1,90 @@
+const openSidebar = document.querySelector("main header div .open-sidebar");
+const closeSidebar = document.querySelector("aside div .close-sidebar");
+const sidebar = document.querySelector("aside");
+const main = document.querySelector("main");
+
+openSidebar.addEventListener("click", (event) => {
+  sidebar.style.marginLeft = "0";
+  sidebar.style.display = "flex";
+  sidebar.style.zIndex = "1";
+  sidebar.style.animationName = "showSidebar";
+
+  main.style.overflow = "hidden";
+  main.style.filter = "blur(2px)";
+});
+
+closeSidebar.addEventListener("click", (event) => {
+  sidebar.style.marginLeft = "-100vw";
+  sidebar.style.animationName = "";
+  sidebar.style.zIndex = "0";
+
+  main.style.overflow = "";
+  main.style.filter = "";
+});
+
+new datedreamer.calendar({
+  element: "#calendar-schedule",
+  selectedDate: new Date(),
+  format: "DD/MM/YYYY",
+  hideInputs: true,
+  onChange: (event) => {
+    console.log(event.detail);
+  },
+  styles: `
+        .datedreamer__calendar_title {
+          color: rgba(6, 21, 43, 0.8);
+
+          font-size: 1.2rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        .datedreamer__calendar_day.datedreamer__calendar_day-header {
+          color: rgba(6, 21, 43, 0.7);
+
+          font-size: 1.2rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-align: center;
+        }
+
+        .datedreamer__calendar_day button {
+          width: 2.4rem;
+          height: 2.4rem;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          background-color: transparent;
+          color: rgba(3, 2, 41, 0.8);
+
+          outline: 0;
+          border: 0;
+
+          font-size: 1.2rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-align: center;
+        }
+
+        .datedreamer__calendar_day.active button {
+          width: 2.4rem;
+          height: 2.4rem;
+
+          background-color: #3A36DB;
+          color: #FFFFFF;
+
+          box-shadow: 0 .4rem .4rem rgba(96, 91, 255, 0.25);
+
+          border-radius: 1.2rem;
+        }
+
+        .datedreamer__calendar_day.disabled button {
+          color: rgba(3, 2, 41, 0.5);
+        }
+    `,
+});

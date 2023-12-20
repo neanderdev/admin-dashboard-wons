@@ -1,0 +1,791 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body,
+input,
+textarea,
+button {
+  font-size: 1.6rem;
+
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  height: 100%;
+
+  display: flex;
+
+  background-color: #f1f4fa;
+  color: #06152b;
+}
+
+aside {
+  min-width: 21.8rem;
+
+  padding: 3.2rem 2.8rem 3.2rem 2.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+
+  background-color: #ffffff;
+}
+
+aside div {
+  display: none;
+  justify-content: end;
+}
+
+aside div .close-sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+
+  outline: 0;
+  border: 0;
+}
+
+aside div .close-sidebar i {
+  color: #06152b;
+
+  font-size: 2.4rem;
+}
+
+aside .logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+aside .logo-container img {
+  width: 4.2rem;
+  height: 2.6rem;
+}
+
+aside .logo-container h2 {
+  color: #06152b;
+
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+aside ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside ul li a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  color: #06152b;
+
+  opacity: 0.5;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+aside ul .active a {
+  color: #3a36db;
+
+  opacity: 1;
+}
+
+aside ul li a i {
+  color: #030229;
+
+  opacity: 0.4;
+
+  font-size: 2.4rem;
+}
+
+aside ul .active a i {
+  color: #3a36db;
+
+  opacity: 1;
+}
+
+aside ul li .qtd-message {
+  color: #ff69b4;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+aside .footer-sidebar {
+  padding-top: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+aside .footer-sidebar button {
+  padding: 1.2rem 2rem;
+
+  background-color: #ff69b4;
+  color: #ffffff;
+
+  outline: 0;
+  border: 0;
+  border-radius: 1rem;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+aside .footer-sidebar .logout-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside .footer-sidebar .logout-container .user {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+aside .footer-sidebar .logout-container .user img {
+  width: 4.4rem;
+  height: 4.4rem;
+
+  border-radius: 1.2rem;
+}
+
+aside .footer-sidebar .logout-container .user .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+aside .footer-sidebar .logout-container .user .info .name {
+  color: #06152b;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+aside .footer-sidebar .logout-container .user .info .plan-info {
+  color: #06152b;
+
+  opacity: 0.5;
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+aside .footer-sidebar .logout-container button {
+  padding: 0;
+
+  background-color: transparent;
+
+  outline: 0;
+  border: 0;
+}
+
+aside .footer-sidebar .logout-container button i {
+  color: #06152b;
+
+  opacity: 0.4;
+
+  font-size: 2rem;
+}
+
+main {
+  width: 100%;
+
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main header div {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+main header div .open-sidebar {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+
+  outline: 0;
+  border: 0;
+}
+
+main header div .open-sidebar i {
+  color: #06152b;
+
+  font-size: 2.4rem;
+}
+
+main header div h2 {
+  color: #06152b;
+
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+main header button {
+  padding: 1.2rem 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: #3a36db;
+  color: #ffffff;
+
+  outline: 0;
+  border: 0;
+  border-radius: 1rem;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+main header button i {
+  color: #ffffff;
+
+  font-size: 2rem;
+}
+
+main .schedule-container {
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 28rem 1fr;
+  gap: 3rem;
+}
+
+main .schedule-container .create-schedule-and-container {
+  height: 100%;
+
+  padding: 2.4rem;
+
+  background-color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+main
+  .schedule-container
+  .create-schedule-and-container
+  .create-schedule-button {
+  padding: 1.2rem 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: #3a36db;
+  color: #ffffff;
+
+  outline: 0;
+  border: 0;
+  border-radius: 0.7rem;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main
+  .schedule-container
+  .create-schedule-and-container
+  .create-schedule-button
+  i {
+  color: #ffffff;
+
+  font-size: 2rem;
+}
+
+main .schedule-container .create-schedule-and-container .community {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+main .schedule-container .create-schedule-and-container .community h6 {
+  color: #06152b;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+main
+  .schedule-container
+  .create-schedule-and-container
+  .community
+  .input-wrapper {
+  width: 100%;
+
+  position: relative;
+}
+
+main
+  .schedule-container
+  .create-schedule-and-container
+  .community
+  .input-wrapper
+  input {
+  width: 100%;
+
+  padding: 1.4rem 0.8rem 1.4rem 3.2rem;
+
+  background-color: #f1f4fa;
+  color: #06152b;
+
+  outline: 0;
+  border: 0;
+  border-radius: 0.7rem;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main
+  .schedule-container
+  .create-schedule-and-container
+  .community
+  .input-wrapper
+  i {
+  position: absolute;
+
+  top: 1.2rem;
+  left: 0.8rem;
+
+  color: rgba(6, 21, 43, 0.3);
+
+  font-size: 2rem;
+}
+
+main .schedule-container .create-schedule-and-container .community .list-users {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+main
+  .schedule-container
+  .create-schedule-and-container
+  .community
+  .list-users
+  .user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+main
+  .schedule-container
+  .create-schedule-and-container
+  .community
+  .list-users
+  .user
+  img {
+  width: 3.4rem;
+  height: 3.4rem;
+
+  border-radius: 3.4rem;
+}
+
+main
+  .schedule-container
+  .create-schedule-and-container
+  .community
+  .list-users
+  .user
+  .user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+main
+  .schedule-container
+  .create-schedule-and-container
+  .community
+  .list-users
+  .user
+  .user-info
+  .name {
+  color: #06152b;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main
+  .schedule-container
+  .create-schedule-and-container
+  .community
+  .list-users
+  .user
+  .user-info
+  .email {
+  color: #06152b;
+
+  opacity: 0.5;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main .schedule-container .create-schedule-and-container .outline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: transparent;
+  color: #3a36db;
+
+  outline: 0;
+  border: 0;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main .schedule-container table {
+  display: table;
+
+  border-spacing: 0 1.5rem;
+  border-collapse: separate;
+}
+
+main .schedule-container table thead tr th {
+  padding: 0.75rem;
+}
+
+main .schedule-container table thead tr th div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .schedule-container table thead tr th:nth-child(2) div,
+main .schedule-container table thead tr th:nth-child(3) div,
+main .schedule-container table thead tr th:nth-child(4) div {
+  justify-content: start;
+}
+
+main .schedule-container table thead tr th div input {
+  width: 2rem;
+  height: 2rem;
+
+  border: 0.1rem solid #06152b;
+  border-radius: 0.2rem;
+
+  accent-color: #3a36db;
+}
+
+main .schedule-container table thead tr th div span {
+  color: #06152b;
+
+  opacity: 0.7;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main .schedule-container table thead tr th div span::after {
+  content: "";
+
+  margin-top: 0.5rem;
+  margin-left: 0.8rem;
+
+  position: absolute;
+
+  width: 0.6rem;
+  height: 0.6rem;
+
+  background-color: #06152b;
+
+  opacity: 0.7;
+
+  border-radius: 0.3rem;
+}
+
+main .schedule-container table tbody tr {
+  background-color: #ffffff;
+
+  border-radius: 1rem;
+}
+
+main .schedule-container table tbody tr td {
+  padding: 1rem;
+}
+
+main .schedule-container table tbody tr td div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .schedule-container table tbody tr td:nth-child(2) div,
+main .schedule-container table tbody tr td:nth-child(3) div,
+main .schedule-container table tbody tr td:nth-child(4) div {
+  justify-content: start;
+}
+
+main .schedule-container table tbody tr td div input {
+  width: 2rem;
+  height: 2rem;
+
+  border: 0.1rem solid #06152b;
+  border-radius: 0.2rem;
+
+  accent-color: #3a36db;
+}
+
+main .schedule-container table tbody tr td .date {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+main .schedule-container table tbody tr td .date i {
+  color: #3a36db;
+
+  font-size: 2rem;
+}
+
+main .schedule-container table tbody tr td .date span {
+  color: #06152b;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main .schedule-container table tbody tr td .time {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+main .schedule-container table tbody tr td .time i {
+  color: rgba(6, 21, 43, 0.6);
+
+  font-size: 2rem;
+}
+
+main .schedule-container table tbody tr td .time span {
+  color: #06152b;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main .schedule-container table tbody tr td div .location {
+  padding: 0.6rem 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  background-color: rgba(58, 54, 219, 0.1);
+  color: #3a36db;
+
+  border-radius: 2.2rem;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main .schedule-container table tbody tr td div .location i {
+  color: #3a36db;
+
+  font-size: 1.6rem;
+}
+
+main .schedule-container table tbody tr td .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+main .schedule-container table tbody tr td .buttons .edit {
+  width: 4rem;
+  height: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(3, 168, 158, 0.1);
+
+  outline: 0;
+  border: 0;
+  border-radius: 4rem;
+}
+
+main .schedule-container table tbody tr td .buttons .edit i {
+  color: #03a89e;
+
+  font-size: 2rem;
+}
+
+main .schedule-container table tbody tr td .buttons .delete {
+  width: 4rem;
+  height: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(255, 105, 180, 0.1);
+
+  outline: 0;
+  border: 0;
+  border-radius: 4rem;
+}
+
+main .schedule-container table tbody tr td .buttons .delete i {
+  color: #ff69b4;
+
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  aside {
+    height: 100vh;
+
+    margin-left: -100vw;
+
+    display: none;
+
+    position: fixed;
+
+    animation-duration: 500ms;
+  }
+
+  aside div {
+    display: flex;
+  }
+
+  main header div .open-sidebar {
+    display: flex;
+  }
+
+  main .schedule-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main header {
+    flex-direction: column;
+    align-items: start;
+    gap: 1.6rem;
+  }
+
+  main header div {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+}
+
+@keyframes showSidebar {
+  from {
+    margin-left: -100vw;
+  }
+  to {
+    margin-left: -0vw;
+  }
+}

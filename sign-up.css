@@ -1,0 +1,282 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body,
+input,
+textarea,
+button {
+  font-size: 1.6rem;
+
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  height: 100%;
+
+  display: flex;
+
+  background-color: #f1f4fa;
+  color: #06152b;
+}
+
+form {
+  width: 46rem;
+
+  padding: 6rem 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+
+  background-color: #ffffff;
+}
+
+form .logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+form .logo-container img {
+  width: 9rem;
+  height: 5.6rem;
+}
+
+form .logo-container h2 {
+  color: #06152b;
+
+  font-size: 2.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+form .buttons-login-oauth {
+  width: 100%;
+
+  display: flex;
+  gap: 2.2rem;
+}
+
+form .buttons-login-oauth button {
+  width: 100%;
+
+  padding: 1.2rem 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: #f1f4fa;
+  color: #06152b;
+
+  outline: 0;
+  border: 0;
+  border-radius: 0.5rem;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+form .buttons-login-oauth button i {
+  font-size: 2rem;
+}
+
+form .or {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+form .or h6 {
+  flex: 0;
+
+  color: #06152b;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+form .or hr {
+  width: 100%;
+  height: 0.1rem;
+
+  background-color: #06152b;
+
+  opacity: 0.1;
+}
+
+form .input-wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+form .input-wrapper label {
+  color: #06152b;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+form .input-wrapper input {
+  padding: 1.6rem;
+
+  background-color: #f1f4fa;
+  color: rgba(6, 21, 43, 0.7);
+
+  outline: 0;
+  border: 0;
+  border-radius: 0.5rem;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+form .checkbox-wrapper {
+  width: 100%;
+
+  display: flex;
+  gap: 0.8rem;
+}
+
+form .checkbox-wrapper input {
+  width: 1.6rem;
+  height: 1.6rem;
+
+  accent-color: #3a36db;
+}
+
+form .checkbox-wrapper label {
+  color: #000000;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+form .checkbox-wrapper label span {
+  color: #605bff;
+}
+
+form button {
+  width: 100%;
+
+  padding: 1.2rem 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: #3a36db;
+  color: #ffffff;
+
+  outline: 0;
+  border: 0;
+  border-radius: 0.5rem;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+form h6 {
+  width: 100%;
+
+  color: #06152b;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+form h6 a {
+  color: #3a36db;
+}
+
+.banner {
+  width: 100%;
+
+  background-color: #f1f4fa;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  width: 68rem;
+  height: 42rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .banner img {
+    width: 48rem;
+    height: 32rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner img {
+    width: 28rem;
+    height: 28rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    width: 100%;
+  }
+
+  .banner {
+    display: none;
+  }
+}

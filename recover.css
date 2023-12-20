@@ -1,0 +1,152 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body,
+input,
+textarea,
+button {
+  font-size: 1.6rem;
+
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f1f4fa;
+  color: #06152b;
+}
+
+form {
+  width: 50rem;
+  height: 50rem;
+
+  padding: 0 8rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  background-color: #ffffff;
+
+  border-radius: 1rem;
+}
+
+form .logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+form .logo-container img {
+  width: 4.2rem;
+  height: 2.6rem;
+}
+
+form .logo-container h2 {
+  color: #06152b;
+
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+form .container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+form .container .input-wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+form .container .input-wrapper label {
+  color: #06152b;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+form .container .input-wrapper input {
+  padding: 1.6rem;
+
+  background-color: #f1f4fa;
+  color: rgba(6, 21, 43, 0.7);
+
+  outline: 0;
+  border: 0;
+  border-radius: 0.5rem;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+form .container button {
+  width: 100%;
+
+  padding: 1.2rem 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: #3a36db;
+  color: #ffffff;
+
+  outline: 0;
+  border: 0;
+  border-radius: 0.5rem;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

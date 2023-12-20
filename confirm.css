@@ -1,0 +1,115 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body,
+input,
+textarea,
+button {
+  font-size: 1.6rem;
+
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f1f4fa;
+  color: #06152b;
+}
+
+.container {
+  width: 54rem;
+  height: 54rem;
+
+  padding: 0 8rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  background-color: #ffffff;
+
+  border-radius: 1rem;
+}
+
+.container .icon {
+  width: 18.4rem;
+  height: 18.4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(58, 54, 219, 0.05);
+
+  border-radius: 18.4rem;
+}
+
+.container .icon i {
+  color: #3a36db;
+
+  font-size: 8rem;
+}
+
+.container h3 {
+  color: #06152b;
+
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.container button {
+  padding: 1.2rem 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: #3a36db;
+  color: #ffffff;
+
+  outline: 0;
+  border: 0;
+  border-radius: 0.5rem;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

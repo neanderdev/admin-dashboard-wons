@@ -1,0 +1,911 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body,
+input,
+textarea,
+button {
+  font-size: 1.6rem;
+
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  height: 100%;
+
+  display: flex;
+
+  background-color: #f1f4fa;
+  color: #06152b;
+}
+
+aside {
+  min-width: 21.8rem;
+
+  padding: 3.2rem 2.8rem 3.2rem 2.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+
+  background-color: #ffffff;
+}
+
+aside div {
+  display: none;
+  justify-content: end;
+}
+
+aside div .close-sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+
+  outline: 0;
+  border: 0;
+}
+
+aside div .close-sidebar i {
+  color: #06152b;
+
+  font-size: 2.4rem;
+}
+
+aside .logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+aside .logo-container img {
+  width: 4.2rem;
+  height: 2.6rem;
+}
+
+aside .logo-container h2 {
+  color: #06152b;
+
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+aside ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside ul li a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  color: #06152b;
+
+  opacity: 0.5;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+aside ul .active a {
+  color: #3a36db;
+
+  opacity: 1;
+}
+
+aside ul li a i {
+  color: #030229;
+
+  opacity: 0.4;
+
+  font-size: 2.4rem;
+}
+
+aside ul .active a i {
+  color: #3a36db;
+
+  opacity: 1;
+}
+
+aside ul li .qtd-message {
+  color: #ff69b4;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+aside .footer-sidebar {
+  padding-top: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+aside .footer-sidebar button {
+  padding: 1.2rem 2rem;
+
+  background-color: #ff69b4;
+  color: #ffffff;
+
+  outline: 0;
+  border: 0;
+  border-radius: 1rem;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+aside .footer-sidebar .logout-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside .footer-sidebar .logout-container .user {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+aside .footer-sidebar .logout-container .user img {
+  width: 4.4rem;
+  height: 4.4rem;
+
+  border-radius: 1.2rem;
+}
+
+aside .footer-sidebar .logout-container .user .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+aside .footer-sidebar .logout-container .user .info .name {
+  color: #06152b;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+aside .footer-sidebar .logout-container .user .info .plan-info {
+  color: #06152b;
+
+  opacity: 0.5;
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+aside .footer-sidebar .logout-container button {
+  padding: 0;
+
+  background-color: transparent;
+
+  outline: 0;
+  border: 0;
+}
+
+aside .footer-sidebar .logout-container button i {
+  color: #06152b;
+
+  opacity: 0.4;
+
+  font-size: 2rem;
+}
+
+main {
+  width: 100%;
+
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main header div {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+main header div .open-sidebar {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+
+  outline: 0;
+  border: 0;
+}
+
+main header div .open-sidebar i {
+  color: #06152b;
+
+  font-size: 2.4rem;
+}
+
+main header div h2 {
+  color: #06152b;
+
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+main header button {
+  padding: 1.2rem 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: #3a36db;
+  color: #ffffff;
+
+  outline: 0;
+  border: 0;
+  border-radius: 1rem;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+main header button i {
+  color: #ffffff;
+
+  font-size: 2rem;
+}
+
+main table {
+  display: table;
+
+  border-spacing: 0 1.5rem;
+  border-collapse: separate;
+}
+
+main table thead tr th {
+  padding: 0.75rem;
+}
+
+main table thead tr th div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main table thead tr th:nth-child(1) div,
+main table thead tr th:nth-child(2) div,
+main table thead tr th:nth-child(3) div,
+main table thead tr th:nth-child(4) div {
+  justify-content: start;
+}
+
+main table thead tr th div span {
+  color: #06152b;
+
+  opacity: 0.7;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main table thead tr th div span::after {
+  content: "";
+
+  margin-top: 0.5rem;
+  margin-left: 0.8rem;
+
+  position: absolute;
+
+  width: 0.6rem;
+  height: 0.6rem;
+
+  background-color: #06152b;
+
+  opacity: 0.7;
+
+  border-radius: 0.3rem;
+}
+
+main table tbody tr {
+  background-color: #ffffff;
+
+  border-radius: 1rem;
+
+  cursor: pointer;
+}
+
+main table tbody tr td {
+  padding: 1rem;
+}
+
+main table tbody tr td div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main table tbody tr td:nth-child(1) div,
+main table tbody tr td:nth-child(2) div,
+main table tbody tr td:nth-child(3) div,
+main table tbody tr td:nth-child(4) div {
+  justify-content: start;
+}
+
+main table tbody tr td .user {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+main table tbody tr td .user img {
+  width: 3rem;
+  height: 3rem;
+
+  border-radius: 3rem;
+}
+
+main table tbody tr td .user span {
+  color: #06152b;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main table tbody tr td div span {
+  color: #06152b;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main table tbody tr td div .badge {
+  padding: 0.6rem 1.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main table tbody tr td div .badge.male {
+  background-color: rgba(3, 168, 158, 0.1);
+  color: #03a89e;
+
+  border-radius: 3.3rem;
+}
+
+main table tbody tr td div .badge.female {
+  background-color: rgba(255, 105, 180, 0.1);
+  color: #ff69b4;
+
+  border-radius: 3.3rem;
+}
+
+main table tbody tr td div .more-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: transparent;
+
+  outline: 0;
+  border: 0;
+}
+
+main table tbody tr td div .more-actions i {
+  color: #3a36db;
+
+  opacity: 0.3;
+
+  font-size: 2rem;
+}
+
+main table tbody tr td div .more-actions:hover i,
+main table tbody tr td div .more-actions:focus i {
+  opacity: 1;
+}
+
+main table tbody tr td div .dropdown-more-action {
+  width: 15rem;
+
+  margin-top: 12rem;
+  margin-right: 8rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1.2rem;
+
+  position: absolute;
+
+  background-color: white;
+
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0.6rem 1rem 0,
+    rgba(0, 0, 0, 0.1) 0 0 0 0.1rem;
+
+  border-radius: 1rem;
+
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.5, 1);
+
+  visibility: hidden;
+
+  z-index: 1;
+
+  opacity: 0;
+}
+
+main table tbody tr td div .dropdown-more-action .edit {
+  width: 100%;
+
+  padding: 0.8rem;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: transparent;
+  color: #3a36db;
+
+  outline: 0;
+  border: 0;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main table tbody tr td div .dropdown-more-action .edit i {
+  color: #3a36db;
+
+  font-size: 2rem;
+}
+
+main table tbody tr td div .dropdown-more-action .edit:hover {
+  background-color: rgba(58, 54, 219, 0.1);
+
+  border-radius: 0.5rem;
+}
+
+main table tbody tr td div .dropdown-more-action .delete {
+  width: 100%;
+
+  padding: 0.8rem;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: transparent;
+  color: #ff69b4;
+
+  outline: 0;
+  border: 0;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main table tbody tr td div .dropdown-more-action .delete i {
+  color: #ff69b4;
+
+  font-size: 2rem;
+}
+
+main table tbody tr td div .dropdown-more-action .delete:hover {
+  background-color: rgba(255, 105, 180, 0.1);
+
+  border-radius: 0.5rem;
+}
+
+.profile-user {
+  min-width: 30rem;
+
+  padding: 6.2rem 2.4rem 3.6rem 2.4rem;
+
+  display: none;
+  flex-direction: column;
+  gap: 3.6rem;
+
+  background-color: #ffffff;
+}
+
+.profile-user .user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.profile-user .user img {
+  width: 7rem;
+  height: 7rem;
+
+  border-radius: 7rem;
+}
+
+.profile-user .user .info-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.profile-user .user .info-user h3 {
+  color: #06152b;
+
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.profile-user .user .info-user span {
+  color: #06152b;
+
+  opacity: 0.7;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profile-user hr {
+  height: 0.2rem;
+
+  background-color: #06152b;
+
+  opacity: 0.1;
+}
+
+.profile-user .contact-info-user {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.profile-user .contact-info-user h5 {
+  color: #06152b;
+
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.profile-user .contact-info-user span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  color: rgba(6, 21, 43, 0.7);
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.profile-user .contact-info-user span i {
+  color: rgba(6, 21, 43, 0.3);
+
+  font-size: 2rem;
+}
+
+.profile-user .graphics-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.profile-user .graphics-info h5 {
+  color: #06152b;
+
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.profile-user .graphics-info .graphics-pie {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.add-customer {
+  min-width: 40rem;
+
+  padding: 4.6rem 3rem;
+
+  display: none;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  background-color: #ffffff;
+}
+
+.add-customer header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-customer header h3 {
+  color: #06152b;
+
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.add-customer header .close-add-customer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+
+  outline: 0;
+  border: 0;
+}
+
+.add-customer header .close-add-customer i {
+  color: rgba(255, 105, 180, 0.8);
+
+  font-size: 2rem;
+}
+
+.add-customer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-customer .add-photo {
+  width: 13.4rem;
+  height: 13.4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f1f4fa;
+
+  outline: 0;
+  border: 0;
+  border-radius: 6.7rem;
+}
+
+.add-customer .add-photo i {
+  color: rgba(3, 2, 41, 0.7);
+
+  font-size: 3.2rem;
+}
+
+.add-customer form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.add-customer form .input-wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.8rem;
+}
+
+.add-customer form .input-wrapper label {
+  color: #06152b;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.add-customer form .input-wrapper input {
+  width: 100%;
+
+  padding: 1.4rem;
+
+  background-color: #f1f4fa;
+  color: rgba(6, 21, 43, 0.7);
+
+  outline: 0;
+  border: 0;
+  broder-radius: 0.5rem;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.add-customer form .select-wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.8rem;
+}
+
+.add-customer form .select-wrapper label {
+  color: #06152b;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.add-customer form .select-wrapper select {
+  width: 100%;
+
+  padding: 1.4rem;
+
+  background-color: #f1f4fa;
+  color: rgba(6, 21, 43, 0.7);
+
+  outline: 0;
+  border: 0;
+  broder-radius: 0.5rem;
+
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.add-customer form button {
+  padding: 1.2rem 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: #3a36db;
+  color: #ffffff;
+
+  outline: 0;
+  border: 0;
+  border-radius: 1rem;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media screen and (max-width: 1024px) {
+  aside {
+    height: 100vh;
+
+    margin-left: -100vw;
+
+    display: none;
+
+    position: fixed;
+
+    animation-duration: 500ms;
+  }
+
+  aside div {
+    display: flex;
+  }
+
+  main header div .open-sidebar {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main header {
+    flex-direction: column;
+    align-items: start;
+    gap: 1.6rem;
+  }
+
+  main header div {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+}
+
+@keyframes showSidebar {
+  from {
+    margin-left: -100vw;
+  }
+  to {
+    margin-left: -0vw;
+  }
+}
